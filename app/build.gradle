@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.app'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.app"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled false
+
+            resValue "string", "admob_app_id", '"ca-app-pub-3940256099942544~3347511713'
+            resValue "string", "interstitial", '"ca-app-pub-3940256099942544/1033173712"'
+            resValue "string", "admob_native", '"ca-app-pub-3940256099942544/2247696110"'
+            resValue "string", "admob_banner", '"ca-app-pub-3940256099942544/6300978111"'
+            resValue "string", "admob_app_open", '"ca-app-pub-3940256099942544/3419835294"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation "com.airbnb.android:lottie:5.1.1"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
+    implementation 'com.google.android.datatransport:transport-runtime:3.1.2'
+    implementation 'androidx.lifecycle:lifecycle-process:2.4.1'
+    implementation 'com.google.ads.mediation:facebook:6.12.0.0'
+    implementation "io.insert-koin:koin-core:3.0.1"
+    implementation "io.insert-koin:koin-core-ext:2.2.3"
+    testImplementation "io.insert-koin:koin-test:3.1.2"
+    implementation "io.insert-koin:koin-androidx-viewmodel:2.2.3"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    testImplementation 'junit:junit:4.13.2'
+
+
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/MyTheme.App"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen">
+
+    <ImageView
+        android:id="@+id/upperspalsh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uppergroundsplash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+         />
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_72sdp"
+        android:src="@drawable/splashramzan"
+
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnStart"
+        android:layout_width="@dimen/_202sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_margin="@dimen/_40sdp"
+        android:src="@drawable/lets_start"
+        app:layout_constraintBottom_toTopOf="@id/bottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upperspalsh"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/lowsplash"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

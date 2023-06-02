@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogwallpaper"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="@dimen/_250sdp"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+
+    >
+
+    <TextView
+        android:id="@+id/homewallpaperD"
+        android:layout_width="@dimen/_172sdp"
+        android:layout_height="43dp"
+        android:text="Set Wallpaper"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HomescreenD"
+        android:layout_width="229dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/navhome"
+        android:text="  Home Screen"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homewallpaperD" />
+    <TextView
+        android:id="@+id/lockscreenD"
+        android:layout_width="229dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/lock"
+        android:text="  Lock Screen"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomescreenD"/>
+    <TextView
+        android:id="@+id/homeandlockscreenD"
+        android:layout_width="229dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/phone"
+        android:text="  Lock &amp; Home Screen "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lockscreenD"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
